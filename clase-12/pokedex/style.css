@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+body {
+    background-color: #0d0d0d;
+}
+.pokemonList{
+    border: 5px solid darkslategrey;
+    padding: 0px;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+.pokemonList p{
+    margin: 1px;
+    width: 100%;
+    border: 2px solid darkslategrey;
+}
+.pokemon{
+    padding: 20px 0px 20px 0px;
+    border: 10px solid #263238;
+}
+.pokemon-images{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nextPokemon, .previousPokemon {
+    height: 40%;
+}
+
+.previousPokemon {
+    transform: rotate(90deg);
+}
+
+.nextPokemon {
+    transform: rotate(280deg);
+}
+
+.pokemonName {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pokemonTypes span {
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+}

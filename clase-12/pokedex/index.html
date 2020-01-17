@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <div class="container h-100 row">
+        <div class="col-xs-6 col-2 pokemonList d-flex flex-column">
+        </div>
+        <div class="col-xs-6 col-10 pokemon-wrapper d-flex align-items-center justify-content-center h-100">
+            <div class="pokemon row">
+                <div class="col-12 pokemon-header d-flex justify-content-center align-items-center">
+                    <img class="previousPokemon" src="https://img.icons8.com/plasticine/100/000000/expand-arrow.png">
+                    <div class="pokemon-image">
+                        <img class="pokemonImg"
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+                            alt="">
+                        <div class="pokemon-images"></div>
+                    </div>
+                    <img class="nextPokemon" src="https://img.icons8.com/plasticine/100/000000/expand-arrow.png">
+                </div>
+                <div class="col-12 pokemon-body d-flex flex-column align-items-center">
+                    <span class="pokemonName">Ditto</span>
+                    <div class="pokemonTypes">
+                    </div>
+                    <div class="pokemonSize d-flex flex-column">
+                        <span class="pokemonWeight">weight: </span>
+                        <span class="pokemonHeight">Height: </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
