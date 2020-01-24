@@ -1,17 +1,17 @@
 {
-  "name": "clase-12",
+  "name": "tarea-exchanges",
   "version": "1.0.0",
+  "description": "Tarea con API de monedas internacionales",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mauro",
   "license": "ISC",
-  "dependencies": {
-    "jquery": "^3.4.1"
-  },
   "devDependencies": {
-    "@types/jquery": "^3.3.31"
+    "cypress": "^3.8.2"
   },
-  "description": ""
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
 }

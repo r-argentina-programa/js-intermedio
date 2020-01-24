@@ -1,0 +1,17 @@
+#div-base{
+    margin-bottom: 10px;
+}
+body{
+    background-color:  #8a8a82;
+}
+
+.centrado{
+    text-align: center;
+}
+
+
+ul {
+    margin-top: 20px;
+    columns: 3;
+    -moz-columns: 3;
+}

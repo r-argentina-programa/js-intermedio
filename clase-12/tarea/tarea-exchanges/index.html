@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>API exchanges</title>
+        <link rel="stylesheet" type="text/css" href="node_modules\bootstrap\dist\css\bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="src/style.css">
+    </head>
+
+
+
+    <body>
+        <div class="container">
+            <h1 class="text-center">Cambio de monedas</h1>
+            <form>
+                <div class="input-group md-3" id="div-base">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text">Base: </label>
+                    </div>
+                    <select class="custom-select" id="listado-bases">
+                        <option selected>Elige una moneda</option>
+                    </select>
+                </div>
+                
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Fecha: </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="aaaa-mm-dd" aria-describedby="basic-addon1" id="fecha">
+                </div>
+
+            </form>
+
+            <div class="centrado">
+                <button type="button" class="btn btn-primary" id="convertir">Ver conversiones</button>
+            </div>
+
+            <div>
+                <ul id="devolucion-monedas" class="centrado">
+                </ul>
+            </div>
+
+
+        </div>
+        <script src="src/index.js"></script>
+    </body>
+</html>

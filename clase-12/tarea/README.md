@@ -33,7 +33,6 @@ PISAR/REEMPLAZAR un pokemon.
 {id: 1, nombre: "pokemonNuevo", height:5, weight: 100}
 
 PATCH - pokemon.com/pokemon/1
-
 {nombre: "pokemonNuevo"}
 
 DELETE - pokemon.com/pokemon/1

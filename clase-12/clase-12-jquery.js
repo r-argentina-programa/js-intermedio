@@ -4,7 +4,7 @@
 
 // const $header = document.querySelector('h1');
 // var $header = document.getElementsByTagName('h1')[0];
-const $header = $("h1");
+const $header = $("h1")
 
 $header.text("Clase 12!");
 
