@@ -11,6 +11,7 @@ body{
 
 
 ul {
+    margin-left: 10%;
     margin-top: 20px;
     columns: 3;
     -moz-columns: 3;
