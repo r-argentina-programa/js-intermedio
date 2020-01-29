@@ -16,7 +16,13 @@ $botonIngresar.click( ingresarDatos => {
     
     let newURL = new URL(fecha, latestURL);
 
-   
+    let seleccionarMoneda = document.querySelector("select");
+
+    let opt = seleccionarMoneda.options[seleccionarMoneda.selectedIndex];
+
+    let monedaBase = document.querySelector("option").value;
+
+    console.log(opt.text);
 
     
     fetch(newURL)
