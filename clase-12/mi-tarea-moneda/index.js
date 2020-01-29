@@ -8,7 +8,7 @@ obtenerListaMoneda()
 
 $botonIngresar.click( ingresarDatos => {
 
-    $("ul").html("");
+    noRepetirLista();
 
     let latestURL = "https://api.exchangeratesapi.io/"
     
@@ -20,7 +20,7 @@ $botonIngresar.click( ingresarDatos => {
 
     console.log(valorMonedaSeleccionada.text);
 
-    let newURL = new URL(fecha, latestURL);
+    let newURL = new URL(fecha + "?base=" + valorMonedaSeleccionada.text, latestURL);
     
     fetch(newURL)
     .then(respuesta => respuesta.json())
@@ -59,5 +59,7 @@ function obtenerListaMoneda(){
     })
 }
 
-
+function noRepetirLista(){
+    $("ul").html("");
+}
 
