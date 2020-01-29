@@ -39,3 +39,5 @@ PATCH - pokemon.com/pokemon/1
 DELETE - pokemon.com/pokemon/1
 BODY: vacío
 respuesta: {success: true}
+
+
