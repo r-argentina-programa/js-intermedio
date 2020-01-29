@@ -14,16 +14,13 @@ $botonIngresar.click( ingresarDatos => {
     
     let fecha = document.querySelector('#ingresar-fecha').value;
     
-    let newURL = new URL(fecha, latestURL);
-
     let seleccionarMoneda = document.querySelector("select");
 
-    let opt = seleccionarMoneda.options[seleccionarMoneda.selectedIndex];
+    let valorMonedaSeleccionada = seleccionarMoneda.options[seleccionarMoneda.selectedIndex];
 
-    let monedaBase = document.querySelector("option").value;
+    console.log(valorMonedaSeleccionada.text);
 
-    console.log(opt.text);
-
+    let newURL = new URL(fecha, latestURL);
     
     fetch(newURL)
     .then(respuesta => respuesta.json())
