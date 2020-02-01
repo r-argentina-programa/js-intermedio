@@ -1,10 +1,12 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest": true
     },
     "extends": [
-        "airbnb-base"
+        "airbnb-base",
+        "plugin:cypress/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -17,6 +19,9 @@
     "rules": {
         "import/extensions": ["warn", {"js": "always"}],
         "spaced-comment": ["warn", "always", {"exceptions": ["/-"], "markers": ["/"]}]
-
-    }
+    },
+    "plugins": [
+        "cypress",
+        "jest"
+    ]
 }
