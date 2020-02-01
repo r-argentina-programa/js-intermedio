@@ -1,14 +1,24 @@
-import { obtenerBase, obtenerMonedas } from './exchange.js';
-import { mostrarCambios, mostrarListadoMonedas } from './ui.js';
+import { obtenerMonedas, obtenerCambios } from './exchange.js';
+import {
+  mostrarCambios, mostrarListadoMonedas, obtenerFechaSeleccionada, obtenerMonedaSeleccionada,
+} from './ui.js';
 
-function seleccionarMoneda(moneda) {
-  obtenerBase(moneda).then((cambios) => mostrarCambios(cambios));
+
+function actualizar() {
+  obtenerCambios(obtenerMonedaSeleccionada(), obtenerFechaSeleccionada())
+    .then((cambios) => mostrarCambios(cambios));
 }
 
 function inicializar() {
   const $monedas = document.querySelector('#monedas');
+  const $fecha = document.querySelector('#fecha');
+
   obtenerMonedas().then((monedas) => {
-    $monedas.appendChild(mostrarListadoMonedas(monedas, seleccionarMoneda));
+    $monedas.appendChild(mostrarListadoMonedas(monedas, actualizar));
+  });
+
+  $fecha.addEventListener('change', () => {
+    actualizar();
   });
 }
 
