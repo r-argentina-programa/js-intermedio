@@ -15,5 +15,6 @@
         "sourceType": "module"
     },
     "rules": {
+        "import/extensions": ["warn", {"js": "always"}]
     }
 }
