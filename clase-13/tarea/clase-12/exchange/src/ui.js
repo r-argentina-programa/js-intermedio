@@ -1,5 +1,3 @@
-/// <reference types="moment" />
-
 export function mostrarCambios(cambios) {
   const $cambios = document.querySelector('#cambio tbody');
   $cambios.innerHTML = '';
